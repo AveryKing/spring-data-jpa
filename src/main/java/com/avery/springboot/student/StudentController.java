@@ -13,12 +13,8 @@ import java.util.List;
 public class StudentController {
 
     @GetMapping
-    public List<Student> hello() {
-        return List.of(new Student(
-                "Avery",
-                "aking13@wmich.edu",
-                LocalDate.of(2000,9,8),
-                21
-        ));
+    public List<Student> getAllStudents() {
+        return StudentService.getStudents();
     }
+
 }
