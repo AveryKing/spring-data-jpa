@@ -1,10 +1,14 @@
 package com.avery.springboot.student;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDate;
 import java.util.List;
 
+@Service
 public class StudentService {
-    public static List<Student> getStudents() {
+    public List<Student> getStudents() {
         return List.of(new Student(
                 "Avery",
                 "aking13@wmich.edu",
