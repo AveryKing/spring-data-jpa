@@ -1,9 +1,7 @@
 package com.avery.springboot.student;
 
-import javax.persistence.Entity;
 import java.time.LocalDate;
 
-@Entity
 public class Student {
     private Long id;
     private String name;
